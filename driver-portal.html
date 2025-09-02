@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Driver Portal – FoodLink Kenya</title>
+  <link rel="stylesheet" href="css/styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+</head>
+<body class="dash-body">
+  <header class="dash-nav">
+    <div class="container dash-nav-inner">
+      <a class="brand-inline" href="index.html"><img src="assets/logo.png" class="logo-sm" alt=""/> FoodLink Kenya</a>
+      <div class="dash-actions">
+        <span id="driverName"></span>
+        <button id="logoutBtn" class="btn btn-outline small">Logout</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container dash">
+    <div class="dash-grid">
+      <section class="card">
+        <h2>Assigned Deliveries</h2>
+        <div id="driverJobs" class="list"></div>
+      </section>
+
+      <section class="card">
+        <h2>My Vehicle / Availability</h2>
+        <form id="driverStatusForm" class="grid-2">
+          <div>
+            <label>Current Location</label>
+            <input type="text" name="location" placeholder="Nakuru"/>
+          </div>
+          <div>
+            <label>Available Capacity (tons)</label>
+            <input type="number" name="capacity" min="0" step="0.1" placeholder="5.0"/>
+          </div>
+          <div class="full right">
+            <button class="btn btn-primary" type="submit">Update Status</button>
+          </div>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© 2025 FoodLink Kenya</p>
+      <a href="admin-login.html" class="admin-link">Admin</a>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

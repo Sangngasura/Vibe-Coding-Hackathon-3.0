@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Buyer Access – FoodLink Kenya</title>
+  <link rel="stylesheet" href="css/styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+</head>
+<body class="auth-body">
+  <div class="auth-card">
+    <a href="index.html" class="brand-inline"><img src="assets/logo.png" class="logo-sm" alt=""/> FoodLink Kenya</a>
+    <h1>Buyer Access</h1>
+    <div class="tabs" data-role="buyer">
+      <button class="tab active" data-tab="login">Login</button>
+      <button class="tab" data-tab="signup">Sign Up</button>
+    </div>
+
+    <form id="buyerLogin" class="tab-panel active" autocomplete="off">
+      <label>Phone (07xxxxxxxx / 011xxxxxxx)</label>
+      <input type="tel" name="phone" placeholder="0712345678" required />
+      <label>Password</label>
+      <input type="password" name="password" placeholder="••••••••" required />
+      <button class="btn btn-primary w-100" type="submit">Login</button>
+      <a href="#" class="link small" id="buyerForgot">Forgot password?</a>
+    </form>
+
+    <form id="buyerSignup" class="tab-panel" autocomplete="off">
+      <label>Organization / Buyer Name</label>
+      <input type="text" name="name" placeholder="City Grocers Ltd" required />
+      <label>Phone (07xxxxxxxx / 011xxxxxxx)</label>
+      <input type="tel" name="phone" placeholder="0712345678" required />
+      <label>Email</label>
+      <input type="email" name="email" placeholder="you@example.com" required />
+      <label>Password</label>
+      <input type="password" name="password" placeholder="Create a password" required />
+      <button class="btn btn-secondary w-100" type="submit">Create Account</button>
+    </form>
+
+    <div class="auth-footer">
+      <a href="index.html" class="link small">← Back to Home</a>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

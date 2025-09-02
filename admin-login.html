@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Admin Login – FoodLink Kenya</title>
+  <link rel="stylesheet" href="css/styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+</head>
+<body class="auth-body">
+  <div class="auth-card admin">
+    <a href="index.html" class="brand-inline"><img src="assets/logo.png" class="logo-sm" alt=""/> FoodLink Kenya</a>
+    <h1>Admin Access</h1>
+
+    <form id="adminLogin" class="tab-panel active" autocomplete="off">
+      <label>Email</label>
+      <input type="email" name="email" placeholder="admin@foodlink.co.ke" required />
+      <label>Password</label>
+      <input type="password" name="password" placeholder="••••••••" required />
+      <button class="btn btn-primary w-100" type="submit">Login</button>
+    </form>
+
+    <div class="muted small mt-12">Tip: This is a local demo. Default admin: <code>admin@foodlink.co.ke</code> / <code>admin123</code></div>
+
+    <div class="auth-footer">
+      <a href="index.html" class="link small">← Back to Home</a>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

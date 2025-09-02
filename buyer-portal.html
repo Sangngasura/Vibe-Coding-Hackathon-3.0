@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Buyer Portal – FoodLink Kenya</title>
+  <link rel="stylesheet" href="css/styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body class="dash-body">
+  <header class="dash-nav">
+    <div class="container dash-nav-inner">
+      <a class="brand-inline" href="index.html"><img src="assets/logo.png" class="logo-sm" alt=""/> FoodLink Kenya</a>
+      <div class="dash-actions">
+        <span id="buyerName"></span>
+        <button id="logoutBtn" class="btn btn-outline small">Logout</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container dash">
+    <div class="dash-grid">
+      <section class="card">
+        <h2>Available Produce</h2>
+        <div id="marketList" class="grid-3"></div>
+      </section>
+
+      <section class="card">
+        <h2>My Orders</h2>
+        <div id="buyerOrders" class="list"></div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Payment Modal -->
+  <div class="modal" id="paymentModal" aria-hidden="true">
+    <div class="modal-content">
+      <button class="modal-close" id="paymentClose" aria-label="Close">&times;</button>
+      <h3>Complete Payment</h3>
+      <p id="paySummary" class="muted small"></p>
+
+      <div class="payment-methods">
+        <label><input type="radio" name="payMethod" value="mpesa" checked/> M-Pesa</label>
+        <label><input type="radio" name="payMethod" value="card"/> Card</label>
+      </div>
+
+      <form id="paymentForm" class="grid-2">
+        <div class="pay-mpesa">
+          <label>M-Pesa Number</label>
+          <input type="tel" id="mpesaNumber" placeholder="0712345678"/>
+        </div>
+        <div class="pay-card hidden">
+          <label>Card Number</label>
+          <input type="text" id="cardNumber" placeholder="4111 1111 1111 1111"/>
+        </div>
+        <div class="pay-card hidden">
+          <label>Expiry (MM/YY)</label>
+          <input type="text" id="cardExpiry" placeholder="12/27"/>
+        </div>
+        <div class="pay-card hidden">
+          <label>CVV</label>
+          <input type="text" id="cardCvv" placeholder="123"/>
+        </div>
+        <div class="full right">
+          <button class="btn btn-primary" id="payNowBtn" type="submit">Pay Now</button>
+          <button class="btn btn-outline" id="cancelPaymentBtn" type="button">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© 2025 FoodLink Kenya</p>
+      <a href="admin-login.html" class="admin-link">Admin</a>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

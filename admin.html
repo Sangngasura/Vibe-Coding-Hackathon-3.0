@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Admin Dashboard – FoodLink Kenya</title>
+  <link rel="stylesheet" href="css/styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+</head>
+<body class="dash-body">
+  <header class="dash-nav">
+    <div class="container dash-nav-inner">
+      <a class="brand-inline" href="index.html"><img src="assets/logo.png" class="logo-sm" alt=""/> FoodLink Kenya</a>
+      <div class="dash-actions">
+        <span>Admin</span>
+        <button id="logoutBtn" class="btn btn-outline small">Logout</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container dash">
+    <div class="dash-grid">
+      <section class="card">
+        <h2>Orders</h2>
+        <div class="table-wrap">
+          <table class="table" id="ordersTable">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Item</th>
+                <th>Qty</th>
+                <th>Total (KSh)</th>
+                <th>Buyer</th>
+                <th>Farmer</th>
+                <th>Status</th>
+                <th>Payment</th>
+                <th>Driver</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody><!-- injected --></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Assign Driver</h2>
+        <form id="assignDriverForm" class="grid-3">
+          <div>
+            <label>Order ID</label>
+            <input type="text" name="orderId" placeholder="e.g. 172345..." required />
+          </div>
+          <div>
+            <label>Driver Name</label>
+            <input type="text" name="driverName" placeholder="John Mwangi" required />
+          </div>
+          <div>
+            <label>Truck Reg</label>
+            <input type="text" name="truckReg" placeholder="KCF 123X" required />
+          </div>
+          <div class="full right">
+            <button class="btn btn-primary" type="submit">Assign</button>
+          </div>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© 2025 FoodLink Kenya</p>
+      <a href="admin-login.html" class="admin-link">Admin</a>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

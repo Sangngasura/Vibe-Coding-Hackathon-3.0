@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FoodLink Kenya - Digital Agricultural Marketplace</title>
+  <link rel="stylesheet" href="css/styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a class="brand" href="index.html">
+        <img src="assets/logo.jpg" alt="FoodLink Kenya" class="logo"/>
+        <span>FoodLink Kenya</span>
+      </a>
+      <ul class="nav-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#market">Marketplace</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+    </div>
+  </nav>
+
+  <header id="home" class="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <h1>Kenya’s Digital Marketplace for Agriculture</h1>
+        <p>Connect farmers, buyers, and drivers. Buy and sell real produce with simple payments and trusted delivery.</p>
+        <div class="hero-cta">
+          <a href="register-farmer.html" class="btn btn-primary"><i class="fas fa-seedling"></i> Farmer</a>
+          <a href="register-buyer.html" class="btn btn-secondary"><i class="fas fa-store"></i> Buyer</a>
+          <a href="register-driver.html" class="btn btn-outline"><i class="fas fa-truck"></i> Driver</a>
+        </div>
+      </div>
+      <div class="hero-media">
+        <img src="assets/hero-marketplace.jpg" alt="Marketplace" />
+      </div>
+    </div>
+  </header>
+
+  <section id="features" class="section">
+    <div class="container">
+      <h2 class="section-title">Why FoodLink?</h2>
+      <div class="grid-3">
+        <div class="card feature">
+          <i class="fas fa-basket-shopping"></i>
+          <h3>Real Inventory</h3>
+          <p>Farmers list actual stock. Buyers select quantity. Inventory reduces automatically.</p>
+        </div>
+        <div class="card feature">
+          <i class="fas fa-shield-halved"></i>
+          <h3>Secure Payments</h3>
+          <p>M-Pesa and Card options. Payment recorded locally. Admin oversight for releases.</p>
+        </div>
+        <div class="card feature">
+          <i class="fas fa-route"></i>
+          <h3>Delivery Ready</h3>
+          <p>Admins can assign drivers to approved orders for smooth last-mile delivery.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="market" class="section alt">
+    <div class="container">
+      <h2 class="section-title">Marketplace Preview</h2>
+      <div class="grid-3">
+        <div class="card market-card">
+          <img src="assets/tomatoes.jpg" alt="Tomatoes"/>
+          <div class="card-body">
+            <h3>Fresh Tomatoes</h3>
+            <p>KSh 80 per Kg</p>
+          </div>
+        </div>
+        <div class="card market-card">
+          <img src="assets/maize.jpg" alt="Maize"/>
+          <div class="card-body">
+            <h3>Dry Maize</h3>
+            <p>KSh 3,000 per 90kg bag</p>
+          </div>
+        </div>
+        <div class="card market-card">
+          <img src="assets/potatoes.jpg" alt="Potatoes"/>
+          <div class="card-body">
+            <h3>Irish Potatoes</h3>
+            <p>KSh 2,800 per sack</p>
+          </div>
+        </div>
+      </div>
+      <div class="center mt-24">
+        <a href="register-buyer.html" class="btn btn-primary">Start Buying</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container narrow">
+      <h2 class="section-title">About FoodLink Kenya</h2>
+      <p>FoodLink Kenya connects producers and buyers through a transparent marketplace with payments and delivery coordination. We help reduce waste, improve farmer income, and give buyers reliable access to quality produce.</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© 2025 FoodLink Kenya</p>
+      <a href="admin-login.html" class="admin-link" title="Admin Access">Admin</a>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Farmer Portal – FoodLink Kenya</title>
+  <link rel="stylesheet" href="css/styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body class="dash-body">
+  <header class="dash-nav">
+    <div class="container dash-nav-inner">
+      <a class="brand-inline" href="index.html"><img src="assets/logo.png" class="logo-sm" alt=""/> FoodLink Kenya</a>
+      <div class="dash-actions">
+        <span id="currentUserName"></span>
+        <button id="logoutBtn" class="btn btn-outline small">Logout</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container dash">
+    <div class="dash-grid">
+      <section class="card">
+        <h2>New Produce Listing</h2>
+        <form id="postForm" class="grid-2">
+          <div>
+            <label>Title</label>
+            <input type="text" name="title" placeholder="Fresh Tomatoes" required/>
+          </div>
+          <div>
+            <label>Price (KSh)</label>
+            <input type="number" name="price" placeholder="80" min="1" required/>
+          </div>
+          <div>
+            <label>Quantity</label>
+            <input type="number" name="quantity" placeholder="500" min="1" required/>
+          </div>
+          <div>
+            <label>Unit</label>
+            <select name="unit">
+              <option value="Kg">Kg</option>
+              <option value="Sack">Sack</option>
+              <option value="Bag">Bag</option>
+              <option value="Crate">Crate</option>
+            </select>
+          </div>
+          <div>
+            <label>Location</label>
+            <input type="text" name="location" placeholder="Eldoret" required/>
+          </div>
+          <div>
+            <label>Image URL (optional)</label>
+            <input type="url" name="imageUrl" placeholder="https://..."/>
+          </div>
+          <div class="full">
+            <label>Description</label>
+            <textarea name="description" placeholder="Red, fresh, Grade A" rows="3"></textarea>
+          </div>
+          <input type="hidden" name="editId" />
+          <div class="full right">
+            <button class="btn btn-primary" type="submit"><i class="fas fa-plus"></i> Save Listing</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="card">
+        <h2>My Listings</h2>
+        <div id="myPosts" class="list"></div>
+      </section>
+
+      <section class="card">
+        <h2>Orders From Buyers</h2>
+        <div id="farmerOrders" class="list"></div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© 2025 FoodLink Kenya</p>
+      <a href="admin-login.html" class="admin-link">Admin</a>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
