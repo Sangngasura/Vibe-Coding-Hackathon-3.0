@@ -104,8 +104,8 @@ FoodLink-Kenya/
 ## 📞 Contact
 
 - **Website:** FoodLink Kenya (prototype)  
-- **Email:** team@foodlink.co.ke  
-- **Pitch Deck:** [See](./https://gamma.app/docs/Pitch-Deck-FoodLink-Kenya-nlghnri2e1f275z?mode=doc)  
+- **Email:** clemosang@gmail.com  
+- **Pitch Deck:** [See PDF](./Pitch-Deck-FoodLink-Kenya.pdf) 
 
 ---
 
