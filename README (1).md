@@ -75,17 +75,6 @@ FoodLink-Kenya/
 ├── js/
 │   └── script.js             # Main app logic
 │
-├── assets/                   # Images & logo
-│   ├── logo.png
-│   ├── hero-marketplace.jpg
-│   ├── farmer.jpg
-│   ├── buyer.jpg
-│   ├── driver.jpg
-│   ├── produce1.jpg
-│   ├── produce2.jpg
-│   ├── produce3.jpg
-│   └── payment.jpg
-│
 └── README.md
 ```
 
@@ -116,7 +105,7 @@ FoodLink-Kenya/
 
 - **Website:** FoodLink Kenya (prototype)  
 - **Email:** team@foodlink.co.ke  
-- **Pitch Deck:** [See PDF](./Pitch-Deck-FoodLink-Kenya.pdf)  
+- **Pitch Deck:** [See](./https://gamma.app/docs/Pitch-Deck-FoodLink-Kenya-nlghnri2e1f275z?mode=doc)  
 
 ---
 
